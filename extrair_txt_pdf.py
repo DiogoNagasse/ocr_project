@@ -8,10 +8,10 @@ def txt_pdf(file_path):
         ler = PyPDF2.PdfReader(file)
         texto = ""
         for page in ler.pages:
-            text += page.extract_text()
+            texto += page.extract_text()
         return texto
 
-caminho_arquivo= ''
+caminho_arquivo= r'C:\Users\diogo_nagasse\Desktop\PROJETO_OCR\ocr_project\imagens_pdfs\pdf.pdf'
 texto_extraido = txt_pdf(caminho_arquivo)
 
 # Caminho para a pasta "Downloads" do usuário
