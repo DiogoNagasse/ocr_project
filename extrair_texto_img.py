@@ -1,6 +1,7 @@
 import pytesseract
 from PIL import Image, ImageEnhance, ImageFilter
 
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 config_personalizada = r'--oem 3 --psm 6'
